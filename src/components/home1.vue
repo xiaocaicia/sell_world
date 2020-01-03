@@ -1,6 +1,9 @@
 <template>
   <div>
+<<<<<<< HEAD
     
+=======
+>>>>>>> develop
       <router-view></router-view>
       <my-footer></my-footer>
   </div>
