@@ -31,6 +31,7 @@ export default {
     }
   },
   created() {
+    
     let arr = JSON.parse(window.localStorage.getItem('car'))
     if (arr === null) {
         return false
