@@ -17,8 +17,10 @@
         </van-grid-item>
       
       </van-grid>
-      <p class="content">{{ itemLis.content.replace(/<[^<]+?>/g, '') }}</p>
+      <p class="content" v-html='itemLis.content'></p>
     </div>
+    <publish_pl></publish_pl>
+    <my-footer></my-footer>
   </div>
 </template>
 
@@ -45,7 +47,7 @@ export default {
       const key = url.substring(url.lastIndexOf('/') + 1).match(/[0-9]*$/)[0]
       // console.log(key)
       const { data: res } = await this.$http.get(`/api/getthumimages/${key}`)
-      // console.log(res)
+      console.log(res)
       if (res.status !== 0) {
         return alert('获取失败')
       }

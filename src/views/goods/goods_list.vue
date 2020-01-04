@@ -21,6 +21,7 @@
         </van-cell>
       </van-list>
     </van-pull-refresh>
+    <my-footer></my-footer>
   </div>
 </template>
 

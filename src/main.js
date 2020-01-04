@@ -28,21 +28,11 @@ import PublishPL from './components/publish_pl.vue'
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios
+
+
 axios.defaults.baseURL = 'http://www.liulongbin.top:3005/'
-// 定义一个全局时间过滤器
-Vue.filter('dateFormat', function(originVal) {
-  const dt = new Date(originVal)
 
-  const y = dt.getFullYear()
-  const m = (dt.getMonth() + 1 + '').padStart(2, '0')
-  const d = (dt.getDate() + '').padStart(2, '0')
 
-  const h = (dt.getHours() + '').padStart(2, '0')
-  const f = (dt.getMinutes() + '').padStart(2, '0')
-  const s = (dt.getSeconds() + '').padStart(2, '0')
-
-  return `${y}-${m}-${d}`
-})
 // 头部组件引入
 Vue.component('my-header', Header)
 
@@ -58,12 +48,9 @@ Vue.filter('dateFormat', function(originVal) {
   const m = (dt.getMonth() + 1 + '').padStart(2, '0')
   const d = (dt.getDate() + '').padStart(2, '0')
 
-  const h = (dt.getHours() + '').padStart(2, '0')
-  const f = (dt.getMinutes() + '').padStart(2, '0')
-  const s = (dt.getSeconds() + '').padStart(2, '0')
-
-  return `${y}-${m}-${d} ${h}:${f}:${s}`
+  return `${y}-${m}-${d}`
 })
+
 
 
 new Vue({

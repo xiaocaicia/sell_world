@@ -8,11 +8,12 @@
           <img :src="imgitem.img_url" alt="" class="imgLis" v-lazy="imgitem.img_url"/>
           <div class="sonLis">
             <p class='one'>{{ imgitem.title }}</p>
-            <p class='two'>{{ imgitem.zhaiyao.substring(0,80)+'...' }}</p>
+            <p class='two' v-html="imgitem.zhaiyao.substring(0,80)+'...'"></p>
           </div>
         </div>
       </van-tab>
     </van-tabs>
+    <my-footer></my-footer>
   </div>
 </template>
 

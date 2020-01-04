@@ -6,6 +6,7 @@
       <hr />
       <div v-html="html" class='pic'></div>
     </div>
+    <my-footer></my-footer>
   </div>
 </template>
 

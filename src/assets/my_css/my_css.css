@@ -1,4 +1,8 @@
+
+
 body {
+  margin-top: 40px !important;
+  margin-bottom: 50px !important;
     max-width: 540px;
     min-width: 320px;
     margin: 0 auto;
@@ -7,7 +11,71 @@ body {
     /* background: #f2f2f2; */
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
+    height: 800px;
 }
+* {
+    padding: 0;
+    margin: 0;
+    /* visibility: hidden; */
+}
+li{
+    list-style: none;
+}
+.van-grid-item__icon img{
+    width: 60px;
+    height: 60px;
+}
+.van-grid-item__text{
+    font-size: 16px;
+  }
+
+body {
+
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, 'Lucida Grande', Verdana, 'Microsoft Yahei', STXihei, hei;
+  color: #000;
+  /* background: #f2f2f2; */
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+* {
+  padding: 0;
+  margin: 0;
+  /* visibility: hidden; */
+}
+li {
+  list-style: none;
+}
+
+.van-field__control {
+  padding: 4px;
+}
+.van-search--show-action{
+    padding: 10px 5px;
+}
+
+.van-list__finished-text {
+  width: 100%;
+  color: #969799;
+  font-size: 13px;
+  line-height: 50px;
+  text-align: center;
+}
+.van-swipe__indicators {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+
+  display: flex;
+
+  transform: translateX(-50%);
+}
+
+ 
+  
+
 * {
     padding: 0;
     margin: 0;
@@ -19,3 +87,4 @@ li{
 .van-grid-item__content {
     padding:5px;
   }
+

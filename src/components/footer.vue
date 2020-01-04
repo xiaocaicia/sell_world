@@ -1,6 +1,6 @@
 <template>
   <div v-show="dis">
-    <van-tabbar v-model="active" >
+    <van-tabbar v-model="active">
       <van-tabbar-item @click="handelHome">
         <span class="iconfont">&#xe626;</span>
         <p>首页</p>
@@ -25,13 +25,12 @@ import { mapState } from 'vuex'
 export default {
   data() {
     return {
-      active: 1,
+      active: 0,
       sum: 0,
       dis: true
     }
   },
   created() {
-    console.log(1)
     let arr = JSON.parse(window.localStorage.getItem('car'))
     if (arr === null) {
       return false
@@ -42,7 +41,7 @@ export default {
     this.$store.state.count = this.sum
     this.tailHidden()
   },
-  
+
   methods: {
     // 跳转主页面
     handelHome() {

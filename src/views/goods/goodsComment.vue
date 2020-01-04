@@ -1,7 +1,8 @@
 <template>
   <div>
-      <router-view></router-view>
-      
+     <my-header :backIsDisplay="true"></my-header>
+     <publish_pl></publish_pl>
+     <my-footer></my-footer>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 // 导入 Vue
 import Vue from 'vue'
-
 // 导入 Button 组件
-import { Grid, GridItem, Image, List, Cell, PullRefresh, Lazyload, SwipeItem, Swipe, Stepper, Toast, Icon, Tabbar, TabbarItem, SubmitBar, Card, Button, Tabs, Tab, ImagePreview } from 'vant'
+import { Search, CellGroup, Panel, Tag, Notify, SwipeCell, Field, Button, Grid, GridItem, Image, List, Cell, PullRefresh,Lazyload, SwipeItem,Swipe, Stepper, Toast, Icon, Tabbar, TabbarItem,SubmitBar, Card, Tabs, Tab, ImagePreview, Divider, Loading } from 'vant'
+
 
 // 挂载 Button 组件
 Vue.use(Grid)
@@ -27,3 +27,13 @@ Vue.use(ImagePreview)
 Vue.use(Lazyload, {
   lazyComponent: true
 })
+Vue.use(Search)
+Vue.use(CellGroup)
+Vue.use(Panel)
+Vue.use(Tag)
+Vue.use(Notify)
+Vue.use(SwipeCell)
+Vue.use(Field)
+Vue.use(Divider)
+Vue.use(Loading)
+  

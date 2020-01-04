@@ -1,6 +1,8 @@
 <template>
+<div>
+   <my-header :backIsDisplay="true"></my-header>
   <div class="contain">
-    <my-header :backIsDisplay="true"></my-header>
+   
     <van-swipe :autoplay="3000" :height="60">
       <van-swipe-item v-for="(image, index) in imgList" :key="index">
         <img style="width:200px;height:200px; display:block ;margin:auto;" v-lazy="image" />
@@ -29,11 +31,13 @@
       </div>
       <div class="btn_footer">
         <van-button class="btn_footer_o" plain type="info" @click='goodsDesc'>图文介绍</van-button>
-        <van-button class="btn_footer_t" plain type="danger">商品评论</van-button>
+        <van-button class="btn_footer_t" plain type="danger" @click='comment'>商品评论</van-button>
       </div>
     </div>
-   
+  
   </div>
+   <my-footer></my-footer>
+</div>
 </template>
 
 <script>
@@ -95,6 +99,10 @@ export default {
     },
     goodsDesc(){
       this.$router.push(`/goods/goodsdesc/${this.goodsList.id}`)
+    },
+    // 商品评论
+    comment(){
+     this.$router.push(`/goodscomments/${this.goodsList.id}`) 
     }
   }
 }

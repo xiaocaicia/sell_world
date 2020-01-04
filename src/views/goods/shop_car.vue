@@ -79,6 +79,7 @@ export default {
     priceNum() {
       const arr = JSON.parse(window.localStorage.getItem('car'))
       this.price = 0
+      if (arr === null) return false
       arr.forEach(item => {
         console.log(item.count, item.price)
         this.price += item.count * item.price
@@ -120,7 +121,6 @@ export default {
       transform: translateX(-50%);
     }
   }
-  
 }
 .footer-c {
   display: none;
@@ -142,6 +142,6 @@ export default {
   }
 }
 .van-submit-bar {
-    max-width: 540px;
-  }
+  max-width: 540px;
+}
 </style>
