@@ -25,6 +25,10 @@ import PictureLists from '../views/picture/picture_lists.vue'
 //图片详情
 import PictureDetails from '../views/picture/picture_details.vue'
 
+// 会员
+import Vip from '../views/vip/vip.vue'
+// 添加商品
+import AddGoods from '../views/home/addgoods.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -32,16 +36,18 @@ const routes = [
   {
     path: '/home1',
     component: Home1,
+    redirect:'/home',
     children: [
       { path: '/home', component: Home },
       { path: '/goods/list', component: GoodsList },
-      { path: '/goods/details', component: GoodsDetails },
+      { path: '/goods/details/:id', component: GoodsDetails },
       { path: '/newslist', component: NewsList },
-      { path: '/news/details', component: NewsDetails },
+      { path: '/news/details/:id', component: NewsDetails },
       { path: '/photo/list', component: PictureLists },
-      { path: '/photo/Info', component: PictureDetails },
+      { path: '/photo/Info/:id', component: PictureDetails },
       { path: '/search', component: Seach },
-      { path: '/photo/Info', component: PictureDetails }
+      { path: '/member', component: Vip },
+      { path: '/addgoods', component: AddGoods }
     ]
   }
 ]

@@ -1,6 +1,8 @@
 <template>
   <div>
-    主页中间
+     <my-header></my-header>
+        主页中间
+    <publish_pl></publish_pl>
   </div>
 </template>
 

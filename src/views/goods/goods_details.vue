@@ -1,9 +1,9 @@
 <template>
   <div>
     del
-    <!-- <my-header></my-header>
+    <my-header :backIsDisplay="true"></my-header>
     <router-view></router-view>
-    <my-footer></my-footer> -->
+    <my-footer></my-footer>
   </div>
 </template>
 
