@@ -1,18 +1,24 @@
-html,
-body,
-#app{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-width: 1200px;
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, 'Lucida Grande', Verdana, 'Microsoft Yahei', STXihei, hei;
+  color: #000;
+  /* background: #f2f2f2; */
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
-.w {
-    width: 1200px;
-    margin: 0 auto;
+* {
+  padding: 0;
+  margin: 0;
+  /* visibility: hidden; */
 }
 li {
-    list-style: none;
-    padding: 5px 8px;
-    text-decoration: none;
-    color: #000;
+  list-style: none;
+}
+.van-field__control {
+  padding: 4px;
+}
+.van-search--show-action{
+    padding: 10px 5px;
 }

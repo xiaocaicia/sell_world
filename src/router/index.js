@@ -1,8 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// 首页
-import Home1 from '../components/home1.vue'
-
 // 首页2 中间
 import Home from '../views/home/home.vue'
 
@@ -32,16 +29,16 @@ const routes = [
   {
     path: '/home1',
     component: Home1,
+    redirect: '/home',
     children: [
       { path: '/home', component: Home },
       { path: '/goods/list', component: GoodsList },
-      { path: '/goods/details', component: GoodsDetails },
+      { path: '/goods/details:id', component: GoodsDetails },
       { path: '/newslist', component: NewsList },
-      { path: '/news/details', component: NewsDetails },
+      { path: '/news/details:id', component: NewsDetails },
       { path: '/photo/list', component: PictureLists },
-      { path: '/photo/Info', component: PictureDetails },
       { path: '/search', component: Seach },
-      { path: '/photo/Info', component: PictureDetails }
+      { path: '/photo/Info:id', component: PictureDetails }
     ]
   }
 ]

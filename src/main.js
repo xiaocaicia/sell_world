@@ -10,6 +10,8 @@ import axios from 'axios'
 // 全局css引入
 import css from './assets/my_css/my_css.css'
 
+import normalizecss from './assets/my_css/normalize.css'
+
 // 导入字体图标
 import Font from './assets/font/iconfont.css'
 
@@ -26,6 +28,10 @@ import PublishPL from './components/publish_pl.vue'
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios
+
+axios.defaults.baseURL = 'http://www.liulongbin.top:3005/'
+
+
 // 头部组件引入
 Vue.component('my-header', Header)
 
