@@ -28,6 +28,7 @@ Vue.config.productionTip = false
 
 Vue.prototype.$http = axios
 axios.defaults.baseURL = 'http://www.liulongbin.top:3005/'
+
 // 头部组件引入
 Vue.component('my-header', Header)
 

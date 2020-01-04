@@ -43,7 +43,7 @@ const routes = [
       { path: '/goods/details/:id', component: GoodsDetails },
       { path: '/goods/goodsdesc/:id', component: GoodsDesc },
       { path: '/goods/shopcar', component: ShopCar },
-      { path: '/newslist', component: NewsList },
+      { path: '/news/list', component: NewsList },
       { path: '/news/details:id', component: NewsDetails },
       { path: '/photo/list', component: PictureLists },
       { path: '/search', component: Seach },

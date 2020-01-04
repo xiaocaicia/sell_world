@@ -1,6 +1,5 @@
 <template>
   <div>
-    
       <router-view></router-view>
       <my-footer></my-footer>
   </div>
