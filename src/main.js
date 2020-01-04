@@ -9,6 +9,7 @@ import axios from 'axios'
 
 // 全局css引入
 import css from './assets/my_css/my_css.css'
+import normalizecss from './assets/my_css/normalize.css'
 
 // 导入字体图标
 import Font from './assets/font/iconfont.css'
@@ -26,6 +27,19 @@ import PublishPL from './components/publish_pl.vue'
 Vue.config.productionTip = false
 
 Vue.prototype.$http = axios
+axios.defaults.baseURL = 'http://www.liulongbin.top:3005/'
+
+//定义一个全局事件过滤器
+Vue.filter('dateFormat', function(originVal) {
+  const dt = new Date(originVal)
+
+  const y = dt.getFullYear()
+  const m = (dt.getMonth() + 1 + '').padStart(2, '0')
+  const d = (dt.getDate() + '').padStart(2, '0')
+
+  const h = (dt.getHours() + '').padStart(2, '0')
+  const f = (dt.getMinutes() + '').padStart(2, '0')
+})
 // 头部组件引入
 Vue.component('my-header', Header)
 
