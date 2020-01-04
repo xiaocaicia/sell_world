@@ -40,23 +40,20 @@ const routes = [
     children: [
       { path: '/home', component: Home },
       { path: '/goods/list', component: GoodsList },
-<<<<<<< HEAD
       { path: '/goods/details/:id', component: GoodsDetails },
       { path: '/goods/goodsdesc/:id', component: GoodsDesc },
       { path: '/goods/shopcar', component: ShopCar },
       { path: '/newslist', component: NewsList },
-      { path: '/news/details:id', component: NewsDetails },
+      { path: '/news/details/:id', component: NewsDetails },
       { path: '/photo/list', component: PictureLists },
       { path: '/search', component: Seach },
-      { path: '/photo/Info/:id', component: PictureDetails }
-=======
-      { path: '/goods/details:id', component: GoodsDetails },
+      { path: '/photo/Info/:id', component: PictureDetails },
+      { path: '/goods/details/:id', component: GoodsDetails },
       { path: '/newslist', component: NewsList },
-      { path: '/news/details:id', component: NewsDetails },
+      { path: '/news/details/:id', component: NewsDetails },
       { path: '/photo/list', component: PictureLists },
       { path: '/photo/Info/:id', component: PictureDetails },
       { path: '/search', component: Seach }
->>>>>>> develop
     ]
   }
 ]

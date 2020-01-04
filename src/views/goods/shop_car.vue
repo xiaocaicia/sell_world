@@ -1,6 +1,6 @@
 <template>
   <div>
-       <my-header :backIsDisplay="true"></my-header>
+    <my-header :backIsDisplay="true"></my-header>
     <div class="kong" :style="this.dis">
       <div class="f">
         <div><img src="../../../public/images/snipaste20200103_140651.jpg" alt="" /></div>
@@ -8,14 +8,15 @@
         <van-button type="info" @click="skipGoodsist">去逛逛</van-button>
       </div>
     </div>
-    <van-submit-bar :price="price*100" button-text="提交订单" @submit="onSubmit" />
+
     <!-- 提交订单 -->
 
-    <van-card :num ="localist[item.id]" v-for="item in goodsList" :key="item.id" :title="item.title" :desc="'￥' + item.sell_price" :thumb="item.thumb_path">
+    <van-card :num="localist[item.id]" v-for="item in goodsList" :key="item.id" :title="item.title" :desc="'￥' + item.sell_price" :thumb="item.thumb_path">
       <div slot="footer">
         <van-stepper v-model="localist[item.id]" @change="changeSum(item.id, localist[item.id])" />
       </div>
     </van-card>
+    <van-submit-bar :price="price * 100" button-text="提交订单" @submit="onSubmit" />
   </div>
 </template>
 
@@ -28,7 +29,7 @@ export default {
       lid: '',
       goodsList: [],
       localist: {},
-      locaid:{}
+      locaid: {}
     }
   },
   created() {
@@ -119,9 +120,7 @@ export default {
       transform: translateX(-50%);
     }
   }
-  .van-submit-bar {
-    max-width: 540px;
-  }
+  
 }
 .footer-c {
   display: none;
@@ -142,4 +141,7 @@ export default {
     color: red;
   }
 }
+.van-submit-bar {
+    max-width: 540px;
+  }
 </style>

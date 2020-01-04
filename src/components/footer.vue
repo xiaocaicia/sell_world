@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <van-tabbar v-model="active">
+  <div v-show="dis">
+    <van-tabbar v-model="active" >
       <van-tabbar-item @click="handelHome">
         <span class="iconfont">&#xe626;</span>
         <p>首页</p>
@@ -27,22 +27,22 @@ export default {
     return {
       active: 1,
       sum: 0,
-      dis: 'display:block'
+      dis: true
     }
   },
   created() {
-    
+    console.log(1)
     let arr = JSON.parse(window.localStorage.getItem('car'))
     if (arr === null) {
-        return false
-    } 
-       arr.forEach(item => {
-        this.sum += item.count
-      })
-      this.$store.state.count = this.sum
-      this.tailHidden() 
-    
+      return false
+    }
+    arr.forEach(item => {
+      this.sum += item.count
+    })
+    this.$store.state.count = this.sum
+    this.tailHidden()
   },
+  
   methods: {
     // 跳转主页面
     handelHome() {
@@ -64,7 +64,7 @@ export default {
     tailHidden() {
       var url = '/goods/shopcar'
       if (this.$router.currentRoute.path === url) {
-        this.dis = 'display:none'
+        this.dis = false
       }
     }
   },

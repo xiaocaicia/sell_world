@@ -9,7 +9,6 @@ import axios from 'axios'
 
 // 全局css引入
 import css from './assets/my_css/my_css.css'
-import normalizecss from './assets/my_css/normalize.css'
 
 import normalizecss from './assets/my_css/normalize.css'
 
@@ -30,8 +29,6 @@ Vue.config.productionTip = false
 
 Vue.prototype.$http = axios
 axios.defaults.baseURL = 'http://www.liulongbin.top:3005/'
-<<<<<<< HEAD
-=======
 // 定义一个全局时间过滤器
 Vue.filter('dateFormat', function(originVal) {
   const dt = new Date(originVal)
@@ -46,8 +43,6 @@ Vue.filter('dateFormat', function(originVal) {
 
   return `${y}-${m}-${d}`
 })
-
->>>>>>> develop
 // 头部组件引入
 Vue.component('my-header', Header)
 
