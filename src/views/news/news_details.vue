@@ -1,6 +1,6 @@
 <template>
   <div>
-    新闻详情
+    <my-header :backIsDisplay="true"></my-header>
   </div>
 </template>
 
