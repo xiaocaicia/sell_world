@@ -26,7 +26,8 @@ module.exports = {
     'spaced-comment':0,
     'vue/no-unused-vars':0,
     'object-curly-spacing':0,
-    'no-unreachable':0
+    'no-unreachable':0,
+    'vue/no-parsing-error':0
   },
   parserOptions: {
     parser: 'babel-eslint'

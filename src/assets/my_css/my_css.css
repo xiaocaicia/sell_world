@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   max-width: 540px;
   min-width: 320px;
   margin: 0 auto;
@@ -35,3 +36,25 @@ li {
 
  
   
+=======
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    /* background: #f2f2f2; */
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+* {
+    padding: 0;
+    margin: 0;
+    /* visibility: hidden; */
+}
+li{
+    list-style: none;
+}
+.van-grid-item__content {
+    padding:5px;
+  }
+>>>>>>> develop

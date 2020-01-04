@@ -2,6 +2,7 @@
 import Vue from 'vue'
 
 // 导入 Button 组件
+<<<<<<< HEAD
 import { Button, Grid, GridItem, Image, List, Cell, PullRefresh,Lazyload, SwipeItem,Swipe, Stepper, Toast, Icon, Tabbar, TabbarItem,SubmitBar, Card } from 'vant'
 
 // 挂载 Button 组件
@@ -23,3 +24,27 @@ Vue.use(TabbarItem)
 Vue.use(SubmitBar)
 Vue.use(Card)
 
+=======
+import { 
+    Button,
+    Tabs,
+    Tab,
+    Grid,
+    GridItem,
+    Image,
+    ImagePreview,
+    Lazyload 
+ } from 'vant'
+
+// 挂载 Button 组件
+Vue.use(Button)
+Vue.use(Tabs)
+Vue.use(Tab)
+Vue.use(Grid)
+Vue.use(GridItem)
+Vue.use(Image)
+Vue.use(ImagePreview)
+Vue.use(Lazyload, {
+    lazyComponent: true
+  });
+>>>>>>> develop
